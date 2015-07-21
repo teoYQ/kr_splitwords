@@ -9,7 +9,7 @@ module.exports=function(string,stopwords){
 
 	//remove stopwords
 	if(stopwords.constructor === Array && stopwords.length){
-		stopWordsPat=new RegExp( '('+ stopwords.join('|') +')','i');
+		stopWordsPat=new RegExp( '\\b('+ stopwords.join('|') +')\\b','i');
 	}
 
 	S(string) 
