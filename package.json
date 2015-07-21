@@ -1,0 +1,28 @@
+{
+  "name": "split-words",
+  "version": "1.0.0",
+  "description": "Easy way to split words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mugendi/split-words.git"
+  },
+  "keywords": [
+    "word",
+    "splitter",
+    "split",
+    "tokenize"
+  ],
+  "author": "Anthony Mugendi (ngurumugz@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugendi/split-words/issues"
+  },
+  "homepage": "https://github.com/mugendi/split-words",
+  "dependencies": {
+    "string": "^3.3.0"
+  }
+}
