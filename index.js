@@ -2,10 +2,17 @@
 var S = require('string');
 
 module.exports=function(string,stopwords){
+	stopwords=stopwords || []
 
-	var words=[];
+	var words=[],
+		stopWordsPat=/^$/;
 
-	S(string).strip(stopwords) //remove certain noise words within numbers
+	//remove stopwords
+	if(stopwords.constructor === Array && stopwords.length){
+		stopWordsPat=new RegExp( '('+ stopwords.join('|') +')','i');
+	}
+
+	S(string) 
 			 .collapseWhitespace() //remove puncts
 			 .trim()							 
 			 .split(' ')
@@ -20,7 +27,10 @@ module.exports=function(string,stopwords){
 			 			.replace(/_/g,' ')//replace underscores
 			 			.split(' ') //add all the words
 			 			.forEach(function(w){
-			 				if(w.length){words.push(w);}				 				
+			 				// w='this';
+			 				if(!stopWordsPat.test(w) && w.length){
+			 					words.push(w);
+			 				}				 				
 			 			});
 
 			 });
