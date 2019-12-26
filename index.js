@@ -1,6 +1,4 @@
 
-var S = require('string');
-
 module.exports=function(string,stopwords){
 	stopwords=stopwords || []
 
@@ -12,9 +10,8 @@ module.exports=function(string,stopwords){
 		stopWordsPat=new RegExp( '\\b('+ stopwords.join('|') +')\\b','i');
 	}
 
-	S(string) 
-			 .collapseWhitespace() //remove puncts
-			 .trim()							 
+	string.replace(/[\s\xa0]+/g, ' ').replace(/^\s+|\s+$/g, '') //remove whitespace
+			 .replace(/(^\s*|\s*$)/g, '')	//remove trailing whitespace		 
 			 .split(' ')
 			 .forEach(function(word){
 
