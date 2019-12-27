@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+    , romantique = require('../lib/romantique')
+
+program
+  .version('0.1.0')
+  .option('-r, --roman', 'Convert Roman to Decimal')
+  .parse(process.argv)
+
+var number = program.args
+
+if(program.roman){
+  var result = romantique.roman.toDecimal(number[0])
+  if(result) console.log(number[0] + ' => ' + result);
+}

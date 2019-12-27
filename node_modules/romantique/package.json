@@ -1,0 +1,45 @@
+{
+  "name": "romantique",
+  "description": "How about converting Roman to Decimal?",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Jú Gonçalves",
+    "email": "junia.goncalves@gmail.com",
+    "url": "github.com/jugoncalves"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jugoncalves/romantique"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/romantique",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1",
+    "chai": "~1.6.1",
+    "srand": "~1.1.2",
+    "mocha": "~1.10.0"
+  },
+  "dependencies": {
+    "commander": "~2.0.0"
+  },
+  "bin":{
+    "romantique": "./bin/romantique"
+  }
+}
