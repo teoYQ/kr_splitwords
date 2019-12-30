@@ -1,27 +1,35 @@
 {
-  "name": "split-words",
-  "version": "1.0.1",
-  "description": "Easy way to split words",
-  "main": "index.js",
+  "name": "natural-number",
+  "version": "1.1.0",
+  "description": "Utility to extract numbers and other related entities like dates from text",
+  "main": "lib/natural-number.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mugendi/split-words.git"
+    "url": "https://github.com/mugendi/natural-number.git"
   },
   "keywords": [
-    "word",
-    "splitter",
-    "split",
-    "tokenize"
+    "nlp",
+    "number",
+    "parse",
+    "extract",
+    "ner",
+    "entities",
+    "dates",
+    "roman",
+    "numbers",
+    "AI",
+    "natural",
+    "language"
   ],
   "author": "Anthony Mugendi (ngurumugz@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mugendi/split-words/issues"
+    "url": "https://github.com/mugendi/natural-number/issues"
   },
-  "homepage": "https://github.com/mugendi/split-words",
+  "homepage": "https://github.com/mugendi/natural-number",
   "dependencies": {
     "arrify": "^2.0.1",
     "async": "^3.1.0",
