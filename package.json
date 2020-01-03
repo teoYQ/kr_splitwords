@@ -36,7 +36,7 @@
     "dehumanize-date": "^2.6.2",
     "isnumeric": "^0.3.3",
     "lodash": "^4.17.15",
-    "numeral": "^1.5.3",
+    "numeral": "^2.0.6",
     "ordinal": "^1.0.3",
     "romantique": "^0.1.0",
     "to-number": "^1.0.2"
